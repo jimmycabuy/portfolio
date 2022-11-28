@@ -23,9 +23,6 @@ function App() {
         scrollServices={scrollServices}
         scrollProjects={scrollProjects}
       />
-      <div>
-        <p>Bonjour je suis un test</p>
-      </div>
       <div id="home">
         <BlockHome />
       </div>
