@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Uwork",
+    "subtitle": "Graphic Design - UI/UX Design - Web Development",
+    "description": "Uwork is a mobile application that connects jobseekers with companies looking for employees. This application aims to totally democratize and review the hiring system with a simple and easy to use application.",
+    "src": "uwork4",
+    "alt": "uwork",
+    "href": "https://youtu.be/pDvhGFhw3gk",
+    "button_title": "See more",
+    "list": [
+      {
+        "li_file": "react",
+        "li_alt": "react",
+        "li_title": "React Native"
+      },
+      {
+        "li_file": "node",
+        "li_alt": "node-js",
+        "li_title": "Node.js"
+      },
+      {
+        "li_file": "expo",
+        "li_alt": "expo",
+        "li_title": "Expo"
+      },
+      {
+        "li_file": "mongodb",
+        "li_alt": "MongoDB",
+        "li_title": "MongoDB"
+      },
+      {
+        "li_file": "heroku",
+        "li_alt": "heroku",
+        "li_title": "Heroku"
+      }
+    ]
+  },
+  {
+    "title": "thedailyjim portfolio",
+    "subtitle": "Web Design - Web Development",
+    "description": "During my free time, I have another passion besides coding, it's photography. I've been passionate about the world of photography since I was young, and I love to get out of my house and capture the life and the surrounding nature.",
+    "src": "tdj",
+    "alt": "thedailyjim",
+    "href": "https://www.thedailyjim.be",
+    "button_title": "See more",
+    "list": [
+      {
+        "li_file": "svelte",
+        "li_alt": "svelte",
+        "li_title": "Svelte/Sapper"
+      },
+      {
+        "li_file": "node",
+        "li_alt": "node-js",
+        "li_title": "Node.js"
+      },
+      {
+        "li_file": "netlify",
+        "li_alt": "netlify",
+        "li_title": "Netlify"
+      },
+      {
+        "li_file": "vercel",
+        "li_alt": "vercel",
+        "li_title": "Vercel"
+      }
+    ]
+  },
+  {
+    "title": "Decathlon",
+    "subtitle": "Web Development",
+    "description": "For the recruitment process at Decathlon, I had to realize a web development exercise in order to show my abilities and to be able to integrate the front-end developers team. The exercise was to reproduce a Figma web page from scratch.",
+    "src": "decathlon",
+    "alt": "decathlon",
+    "href": "https://decathlon-exo.vercel.app/",
+    "button_title": "See more",
+    "list": [
+      {
+        "li_file": "react",
+        "li_alt": "react",
+        "li_title": "React"
+      },
+      {
+        "li_file": "vercel",
+        "li_alt": "vercel",
+        "li_title": "Vercel"
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "src": "memoji-6",
+    "alt": "web-design-memoji",
+    "name": "Web Design",
+    "description": "Creation and design of the web interface: interactional architecture, page organization and navigation."
+  },
+  {
+    "src": "memoji-1",
+    "alt": "development-memoji",
+    "name": "Web Development",
+    "description": "Once your website is designed and validated, it is time to code it and host it to see it online."
+  },
+  {
+    "src": "memoji-4",
+    "alt": "photography-memoji",
+    "name": "Photography",
+    "description": "The quality of the images on a website is a major element. Let's organize a photo shoot."
+  },
+  {
+    "src": "memoji-2",
+    "alt": "content-creation-memoji",
+    "name": "Content Creation",
+    "description": "Need a logo, a photo montage or a little animation? No problem, your website will be even more beautiful."
+  }
+]
