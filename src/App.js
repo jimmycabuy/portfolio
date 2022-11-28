@@ -26,7 +26,7 @@ function App() {
       <div id="home">
         <BlockHome />
       </div>
-
+<p>bonjour</p>
       <div id="about" ref={scrollAbout}>
         <BlockAboutMe />
       </div>
