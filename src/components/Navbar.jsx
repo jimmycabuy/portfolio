@@ -48,7 +48,7 @@ export default function Footer(props) {
 
   const toggle = () => {
     setMenuToggle(!menuToggle);
-    window.scrollBy(0, -75);
+    // window.scrollBy(0, -75);
   };
 
   return (
