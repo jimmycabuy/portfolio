@@ -1,9 +1,20 @@
 import React from "react";
 import { useState } from "react";
 
-export default function Navbar(props) {
+let number = 0;
+
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  number = 1000;
+}
+
+console.log(number)
+
+export default function Footer(props) {
   const scrollToSection = (elementRef) => {
-    elementRef.current?.scrollIntoView();
+    window.scrollTo({
+      top: elementRef.current.offsetTop - number,
+      behavior: "smooth",
+    });
   };
 
   const [menuToggle, setMenuToggle] = useState(true);
@@ -43,11 +54,11 @@ export default function Navbar(props) {
           style={{ fontSize: "25px", color: "#FF4848", cursor: "pointer" }}
           onClick={() => scrollToSection(props.scrollHome)}
         >
-          Jimmy Cabuyyy
+          Jimmy Cabuy
         </p>
       </div>
       <input type="checkbox" id="toggler" />
-      <label class="label" htmlFor="toggler" onClick={toggle}>
+      <label className="label" htmlFor="toggler" onClick={toggle}>
         {burgerMenuIcon}
       </label>
       <div className="blocnavbar2">
