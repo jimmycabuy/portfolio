@@ -5,7 +5,7 @@ var w = window.innerWidth;
 let number = 0;
 
 if (w < 754) {
-  number = 200;
+  number = 400;
 }
 
 console.log(w);
@@ -73,9 +73,9 @@ export default function Footer(props) {
               className="linkNavBar"
               onClick={() => scrollToSection(props.scrollHome)}
             >
-              {/* <label htmlFor="toggler" onClick={toggle}> */}
+              <label htmlFor="toggler" onClick={toggle}>
               Home
-              {/* </label> */}
+              </label>
             </button>
           </li>
           <li>
@@ -83,9 +83,9 @@ export default function Footer(props) {
               className="linkNavBar"
               onClick={() => scrollToSection(props.scrollAbout)}
             >
-              {/* <label htmlFor="toggler" onClick={toggle}> */}
+              <label htmlFor="toggler" onClick={toggle}>
               About
-              {/* </label> */}
+              </label>
             </button>
           </li>
           <li>
@@ -93,9 +93,9 @@ export default function Footer(props) {
               className="linkNavBar"
               onClick={() => scrollToSection(props.scrollServices)}
             >
-              {/* <label htmlFor="toggler" onClick={toggle}> */}
+              <label htmlFor="toggler" onClick={toggle}>
               Services
-              {/* </label> */}
+              </label>
             </button>
           </li>
           <li>
@@ -103,9 +103,9 @@ export default function Footer(props) {
               className="linkNavBar"
               onClick={() => scrollToSection(props.scrollProjects)}
             >
-              {/* <label htmlFor="toggler" onClick={toggle}> */}
+              <label htmlFor="toggler" onClick={toggle}>
               Projects
-              {/* </label> */}
+              </label>
             </button>
           </li>
           <li>
