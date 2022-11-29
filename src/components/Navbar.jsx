@@ -4,7 +4,7 @@ import { useState } from "react";
 let number = 0;
 
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-  number = 0;
+  number = 200;
 }
 
 export default function Footer(props) {
@@ -39,6 +39,10 @@ export default function Footer(props) {
     );
   }
 
+  const burgerToggle = () => {
+    setMenuToggle(!menuToggle);
+  };
+
   const toggle = () => {
     setMenuToggle(!menuToggle);
     window.scrollBy(0, -75);
@@ -56,7 +60,7 @@ export default function Footer(props) {
         </p>
       </div>
       <input type="checkbox" id="toggler" />
-      <label className="label" htmlFor="toggler" onClick={toggle}>
+      <label className="label" htmlFor="toggler" onClick={burgerToggle}>
         {burgerMenuIcon}
       </label>
       <div className="blocnavbar2">
