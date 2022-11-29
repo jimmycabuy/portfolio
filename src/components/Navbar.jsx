@@ -4,8 +4,7 @@ import { useState } from "react";
 export default function Navbar(props) {
   const scrollToSection = (elementRef) => {
     window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: "smooth",
+      top: elementRef.current.offsetTop
     });
   };
 
