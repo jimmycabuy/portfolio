@@ -4,9 +4,9 @@ import { useState } from "react";
 var w = window.innerWidth;
 let number = 0;
 
-if (w < 754) {
+if (w < 850) {
   number = 350;
-} else if (w > 754 && w < 1326) {
+} else if (w > 850 && w < 1326) {
   number = 175;
 } else {
   number = 0;
