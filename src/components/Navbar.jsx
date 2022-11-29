@@ -76,9 +76,9 @@ export default function Footer(props) {
               className="linkNavBar"
               onClick={() => scrollToSection(props.scrollAbout)}
             >
-              <label htmlFor="toggler" onClick={toggle}>
+              {/* <label htmlFor="toggler" onClick={toggle}> */}
                 About
-              </label>
+              {/* </label> */}
             </button>
           </li>
           <li>
