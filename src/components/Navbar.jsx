@@ -5,10 +5,14 @@ var w = window.innerWidth;
 let number = 0;
 
 if (w < 754) {
-  number = 400;
+  number = 350;
+} else if (w > 754 && w < 1326) {
+  number = 175;
+} else {
+  number = 0;
 }
 
-console.log(w);
+console.log(number);
 
 export default function Footer(props) {
   const scrollToSection = (elementRef) => {
@@ -42,13 +46,8 @@ export default function Footer(props) {
     );
   }
 
-  const burgerToggle = () => {
-    setMenuToggle(!menuToggle);
-  };
-
   const toggle = () => {
     setMenuToggle(!menuToggle);
-    // window.scrollBy(0, -75);
   };
 
   return (
@@ -63,7 +62,7 @@ export default function Footer(props) {
         </p>
       </div>
       <input type="checkbox" id="toggler" />
-      <label className="label" htmlFor="toggler" onClick={burgerToggle}>
+      <label className="label" htmlFor="toggler" onClick={toggle}>
         {burgerMenuIcon}
       </label>
       <div className="blocnavbar2">
@@ -74,7 +73,7 @@ export default function Footer(props) {
               onClick={() => scrollToSection(props.scrollHome)}
             >
               <label htmlFor="toggler" onClick={toggle}>
-              Home
+                Home
               </label>
             </button>
           </li>
@@ -84,7 +83,7 @@ export default function Footer(props) {
               onClick={() => scrollToSection(props.scrollAbout)}
             >
               <label htmlFor="toggler" onClick={toggle}>
-              About
+                About
               </label>
             </button>
           </li>
@@ -94,7 +93,7 @@ export default function Footer(props) {
               onClick={() => scrollToSection(props.scrollServices)}
             >
               <label htmlFor="toggler" onClick={toggle}>
-              Services
+                Services
               </label>
             </button>
           </li>
@@ -104,7 +103,7 @@ export default function Footer(props) {
               onClick={() => scrollToSection(props.scrollProjects)}
             >
               <label htmlFor="toggler" onClick={toggle}>
-              Projects
+                Projects
               </label>
             </button>
           </li>
