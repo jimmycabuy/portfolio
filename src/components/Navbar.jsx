@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 export default function Navbar(props) {
   const scrollToSection = (elementRef) => {
@@ -7,6 +8,36 @@ export default function Navbar(props) {
       behavior: "smooth",
     });
   };
+
+  const [menuToggle, setMenuToggle] = useState(true);
+
+  let burgerMenuIcon;
+
+  if (menuToggle) {
+    burgerMenuIcon = (
+      <img
+        className="burgerMenuImg"
+        src="../images/menu.png"
+        alt="burgermenu"
+        style={{ height: "20px", width: "20px" }}
+      />
+    );
+  } else {
+    burgerMenuIcon = (
+      <img
+        className="burgerMenuImg"
+        src="../images/close.png"
+        alt="burgermenu"
+        style={{ height: "20px", width: "20px" }}
+      />
+    );
+  }
+
+  const toggle = () => {
+    setMenuToggle(!menuToggle);
+    window.scrollBy(0, -75);
+  };
+
   return (
     <nav className="navbar">
       <div className="blocnavbar1">
@@ -19,13 +50,8 @@ export default function Navbar(props) {
         </p>
       </div>
       <input type="checkbox" id="toggler" />
-      <label htmlFor="toggler">
-        <img
-          className="burgerMenuImg"
-          src="../images/menu.png"
-          alt="burgermenu"
-          style={{ height: "20px", width: "20px" }}
-        />
+      <label class="label" htmlFor="toggler" onClick={toggle}>
+        {burgerMenuIcon}
       </label>
       <div className="blocnavbar2">
         <ul className="list">
@@ -34,7 +60,9 @@ export default function Navbar(props) {
               className="linkNavBar"
               onClick={() => scrollToSection(props.scrollHome)}
             >
-              Home
+              <label htmlFor="toggler" onClick={toggle}>
+                Home
+              </label>
             </button>
           </li>
           <li>
@@ -42,7 +70,9 @@ export default function Navbar(props) {
               className="linkNavBar"
               onClick={() => scrollToSection(props.scrollAbout)}
             >
-              About
+              <label htmlFor="toggler" onClick={toggle}>
+                About
+              </label>
             </button>
           </li>
           <li>
@@ -50,7 +80,9 @@ export default function Navbar(props) {
               className="linkNavBar"
               onClick={() => scrollToSection(props.scrollServices)}
             >
-              Services
+              <label htmlFor="toggler" onClick={toggle}>
+                Services
+              </label>
             </button>
           </li>
           <li>
@@ -58,7 +90,9 @@ export default function Navbar(props) {
               className="linkNavBar"
               onClick={() => scrollToSection(props.scrollProjects)}
             >
-              Projects
+              <label htmlFor="toggler" onClick={toggle}>
+                Projects
+              </label>
             </button>
           </li>
           <li>

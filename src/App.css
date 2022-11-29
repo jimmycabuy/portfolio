@@ -147,7 +147,7 @@ a {
 }
 
 #toggler,
-.navbar label {
+.navbar .label {
   display: none;
 }
 
