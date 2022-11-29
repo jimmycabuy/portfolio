@@ -3,9 +3,7 @@ import { useState } from "react";
 
 export default function Navbar(props) {
   const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop
-    });
+    elementRef.current?.scrollIntoView();
   };
 
   const [menuToggle, setMenuToggle] = useState(true);
@@ -45,7 +43,7 @@ export default function Navbar(props) {
           style={{ fontSize: "25px", color: "#FF4848", cursor: "pointer" }}
           onClick={() => scrollToSection(props.scrollHome)}
         >
-          Jimmy Cabuy
+          Jimmy Cabuyyy
         </p>
       </div>
       <input type="checkbox" id="toggler" />
