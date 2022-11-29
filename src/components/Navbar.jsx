@@ -4,7 +4,7 @@ import { useState } from "react";
 let number = 0;
 
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-  number = 950;
+  number = 0;
 }
 
 export default function Footer(props) {
