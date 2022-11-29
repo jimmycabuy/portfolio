@@ -66,9 +66,9 @@ export default function Footer(props) {
               className="linkNavBar"
               onClick={() => scrollToSection(props.scrollHome)}
             >
-              <label htmlFor="toggler" onClick={toggle}>
+              {/* <label htmlFor="toggler" onClick={toggle}> */}
                 Home
-              </label>
+              {/* </label> */}
             </button>
           </li>
           <li>
@@ -86,9 +86,9 @@ export default function Footer(props) {
               className="linkNavBar"
               onClick={() => scrollToSection(props.scrollServices)}
             >
-              <label htmlFor="toggler" onClick={toggle}>
+              {/* <label htmlFor="toggler" onClick={toggle}> */}
                 Services
-              </label>
+              {/* </label> */}
             </button>
           </li>
           <li>
@@ -96,9 +96,9 @@ export default function Footer(props) {
               className="linkNavBar"
               onClick={() => scrollToSection(props.scrollProjects)}
             >
-              <label htmlFor="toggler" onClick={toggle}>
+              {/* <label htmlFor="toggler" onClick={toggle}> */}
                 Projects
-              </label>
+              {/* </label> */}
             </button>
           </li>
           <li>
