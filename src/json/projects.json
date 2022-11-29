@@ -27,11 +27,6 @@
         "li_file": "mongodb",
         "li_alt": "MongoDB",
         "li_title": "MongoDB"
-      },
-      {
-        "li_file": "heroku",
-        "li_alt": "heroku",
-        "li_title": "Heroku"
       }
     ]
   },
@@ -60,9 +55,9 @@
         "li_title": "Netlify"
       },
       {
-        "li_file": "vercel",
-        "li_alt": "vercel",
-        "li_title": "Vercel"
+        "li_file": "heroku",
+        "li_alt": "heroku",
+        "li_title": "Heroku"
       }
     ]
   },
