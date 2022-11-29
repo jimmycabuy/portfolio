@@ -153,9 +153,7 @@ and (orientation : portrait) {
         padding-left: 30px;
         padding-right: 30px;
         height: auto;
-        position: sticky;
-        padding-bottom: 1rem;
-        z-index: 60;
+        position: relative;
     }
     #home{
         height: auto;

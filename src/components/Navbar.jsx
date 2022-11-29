@@ -4,10 +4,8 @@ import { useState } from "react";
 let number = 0;
 
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-  number = 1000;
+  number = 950;
 }
-
-console.log(number)
 
 export default function Footer(props) {
   const scrollToSection = (elementRef) => {
