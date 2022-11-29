@@ -1,11 +1,14 @@
 import React from "react";
 import { useState } from "react";
 
+var w = window.innerWidth;
 let number = 0;
 
-if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-  number = 200;
+if (w < 754) {
+  number = 100;
 }
+
+console.log(w);
 
 export default function Footer(props) {
   const scrollToSection = (elementRef) => {
@@ -71,7 +74,7 @@ export default function Footer(props) {
               onClick={() => scrollToSection(props.scrollHome)}
             >
               {/* <label htmlFor="toggler" onClick={toggle}> */}
-                Home
+              Home
               {/* </label> */}
             </button>
           </li>
@@ -81,7 +84,7 @@ export default function Footer(props) {
               onClick={() => scrollToSection(props.scrollAbout)}
             >
               {/* <label htmlFor="toggler" onClick={toggle}> */}
-                About
+              About
               {/* </label> */}
             </button>
           </li>
@@ -91,7 +94,7 @@ export default function Footer(props) {
               onClick={() => scrollToSection(props.scrollServices)}
             >
               {/* <label htmlFor="toggler" onClick={toggle}> */}
-                Services
+              Services
               {/* </label> */}
             </button>
           </li>
@@ -101,7 +104,7 @@ export default function Footer(props) {
               onClick={() => scrollToSection(props.scrollProjects)}
             >
               {/* <label htmlFor="toggler" onClick={toggle}> */}
-                Projects
+              Projects
               {/* </label> */}
             </button>
           </li>
