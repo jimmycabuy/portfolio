@@ -5,7 +5,7 @@ var w = window.innerWidth;
 let number = 0;
 
 if (w < 754) {
-  number = 100;
+  number = 200;
 }
 
 console.log(w);
