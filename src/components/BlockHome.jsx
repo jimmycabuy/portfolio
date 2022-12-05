@@ -3,7 +3,7 @@ import Typed from "react-typed";
 
 import ScrollAnimation from "./ScrollAnimation";
 
-export default function Block_1() {
+export default function BlockHome() {
   return (
     <div className="containerHome">
       <p className="text-banner">

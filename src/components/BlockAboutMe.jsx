@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function AboutMe() {
+export default function BlockAboutMe() {
   return (
     <div className="containerAbout">
       <h1 className="subtitle">About me</h1>
