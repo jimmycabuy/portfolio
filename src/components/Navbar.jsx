@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 export default function Navbar(props) {
-  const [width, setWidth] = useState(0);
+  const [width, setWidth] = useState(window.innerWidth);
   const [menuToggle, setMenuToggle] = useState(true);
 
   let burgerMenuIcon;
@@ -20,6 +20,7 @@ export default function Navbar(props) {
     number = 0;
   }
   console.log(number);
+  console.log(width)
   const scrollToSection = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop - number,
