@@ -1,30 +1,31 @@
 import React from "react";
 import { useState } from "react";
 
-var w = window.innerWidth;
-let number = 0;
+export default function Navbar(props) {
+  const [width, setWidth] = useState(0);
+  const [menuToggle, setMenuToggle] = useState(true);
 
-if (w < 850) {
-  number = 350;
-} else if (w > 850 && w < 1326) {
-  number = 175;
-} else {
-  number = 0;
-}
+  let burgerMenuIcon;
+  let number = 0;
 
-console.log(number);
+  window.onresize = function () {
+    setWidth(document.body.clientWidth);
+  };
 
-export default function Footer(props) {
+  if (width < 750) {
+    number = 320;
+  } else if (width > 750 && width < 1326) {
+    number = 135;
+  } else {
+    number = 0;
+  }
+  console.log(number);
   const scrollToSection = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop - number,
       behavior: "smooth",
     });
   };
-
-  const [menuToggle, setMenuToggle] = useState(true);
-
-  let burgerMenuIcon;
 
   if (menuToggle) {
     burgerMenuIcon = (
