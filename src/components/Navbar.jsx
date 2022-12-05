@@ -12,9 +12,9 @@ export default function Navbar(props) {
     setWidth(document.body.clientWidth);
   };
 
-  if (width < 800) {
+  if (width < 750) {
     number = 320;
-  } else if (width >= 800 && width <= 1025) {
+  } else if (width > 750 && width < 1326) {
     number = 135;
   } else {
     number = 0;
