@@ -14,12 +14,11 @@ export default function Navbar(props) {
 
   if (width < 750) {
     number = 320;
-  } else if (width > 750 && width < 1326) {
+  } else if (width > 750 && width < 1025) {
     number = 135;
   } else {
     number = 0;
   }
-  console.log(number);
   const scrollToSection = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop - number,
