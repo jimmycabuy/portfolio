@@ -14,7 +14,7 @@ export default function Navbar(props) {
 
   if (width < 750) {
     number = 320;
-  } else if (width > 750 && width < 1326) {
+  } else if (width > 750 && width < 1325) {
     number = 135;
   } else {
     number = 0;
