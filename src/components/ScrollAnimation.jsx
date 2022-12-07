@@ -6,7 +6,7 @@ export default function ScrollAnimation() {
       <span className="mouse">
         <span className="mouse-wheel"></span>
       </span>
-      <p className="text-scroll">Scroll me</p>
+      <p className="text-scroll">Scroll mee</p>
     </div>
   );
 }
