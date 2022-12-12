@@ -19,8 +19,8 @@ export default function Navbar(props) {
   } else {
     number = 0;
   }
-  console.log(number);
-  console.log(width)
+  // console.log(number);
+  // console.log(width)
   const scrollToSection = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop - number,
