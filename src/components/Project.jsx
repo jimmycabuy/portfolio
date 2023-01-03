@@ -8,6 +8,7 @@ export default function Project(props) {
         <h2>{props.title}</h2>
         <h5>{props.subtitle}</h5>
         <p>
+          bonjour ca va ??
           {props.description}
           <a
             href={props.href}
