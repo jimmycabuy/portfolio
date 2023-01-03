@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Project(props) {
   return (
-    <>
+    <a href={props.href} target="_blank" rel="noreferrer">
       <img src={`../images/${props.src}.webp`} alt={props.alt} />
       <div className="con-text">
         <h2>{props.title}</h2>
@@ -19,6 +19,6 @@ export default function Project(props) {
           </a>
         </p>
       </div>
-    </>
+    </a>
   );
 }
