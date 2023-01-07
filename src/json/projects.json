@@ -81,5 +81,26 @@
         "li_title": "Vercel"
       }
     ]
+  },
+  {
+    "title": "Decathlon",
+    "subtitle": "Web Development",
+    "description": "For the recruitment process at Decathlon, I had to realize a web development exercise in order to show my abilities and to be able to integrate the front-end developers team. The exercise was to reproduce a Figma web page from scratch.",
+    "src": "decathlon",
+    "alt": "decathlon",
+    "href": "https://decathlon-jimmy.vercel.app/",
+    "button_title": "See more",
+    "list": [
+      {
+        "li_file": "svelte",
+        "li_alt": "svelte",
+        "li_title": "SvelteKit"
+      },
+      {
+        "li_file": "vercel",
+        "li_alt": "vercel",
+        "li_title": "Vercel"
+      }
+    ]
   }
 ]
